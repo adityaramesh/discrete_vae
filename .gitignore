@@ -1,0 +1,19 @@
+# Python
+*.DS_Store
+*.ipynb_checkpoints
+__pycache__
+
+# Vim
+*.vim
+*.swp
+*.swo
+*.swn
+
+# TeX
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+
+/data
