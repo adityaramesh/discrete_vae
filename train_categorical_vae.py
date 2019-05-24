@@ -172,7 +172,7 @@ def random_gumbel(shape, eps=1e-12):
 
 def gumbel_softmax_sample(logits, temp):
 	g = random_gumbel(tf.shape(logits))
-	return tf.nn.softmax((logits + g) / temp)
+	return tf.nn.softmax((logits + g) / temp, axis=2)
 
 def gumbel_softmax_log_likelihood(x, logits, temp, eps=1e-12):
 	xs = x.get_shape().as_list()
